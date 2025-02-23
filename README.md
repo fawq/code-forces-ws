@@ -17,7 +17,7 @@ uv init --vcs none --package python/<name>
 ## Check code
 
 ```bash
-./check.sh
+./check_code.sh
 ```
 
 ## Check specific tests
