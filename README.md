@@ -1,12 +1,14 @@
 # Template for a new project
 
-## Rust
+## Create project
+
+### Rust
 
 ```bash
 cargo new --vcs none --bin rust/<name>
 ```
 
-## Python
+### Python
 
 ```bash
 uv init --vcs none --package python/<name>
@@ -17,3 +19,18 @@ uv init --vcs none --package python/<name>
 ```bash
 ./check.sh
 ```
+
+## Check specific tests
+
+### Python
+
+```bash
+uv run pytest python/<name>
+```
+
+### Rust
+
+```bash
+cargo test --bin <name>
+```
+
