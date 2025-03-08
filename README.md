@@ -65,7 +65,7 @@ cargo new --vcs none --bin rust/<name>
 uv init --vcs none --package python/<name>
 ```
 
-## Mixed (Rust libray + Python package) workspace
+### Mixed (Rust library + Python package) workspace
 
 ```bash
 uv init --vcs none --package --build-backend maturin mixed/<name>
@@ -105,7 +105,7 @@ uv run pytest python/<name>
 cargo test --bin <name>
 ```
 
-### Mixed (Rust library + Python package)
+### Mixed tests
 
 > [!IMPORTANT]  
 > You need to manually develop release for maturin project. More info at [notes](#update-mixed-workspace)
