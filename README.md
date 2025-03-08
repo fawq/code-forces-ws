@@ -105,7 +105,7 @@ uv run pytest python/<name>
 cargo test --bin <name>
 ```
 
-## Mixed (Rust libray + Python package)
+### Mixed (Rust library + Python package)
 
 > [!IMPORTANT]  
 > You need to manually develop release for maturin project. More info at [notes](#update-mixed-workspace)
