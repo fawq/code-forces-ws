@@ -109,14 +109,13 @@ cargo test --bin <name>
 
 > [!IMPORTANT]  
 > You need to manually develop release for maturin project. More info at [notes](#update-mixed-workspace)
+> [!NOTE]
+> You cannot test rust libraries directly. You can only test whole project.
 
 ```bash
 uv run pytest mixed/<name>
 cargo test
 ```
-
-> [!NOTE]
-> You cannot test rust libraries directly. You can only test whole project.
 
 ## Notes
 
