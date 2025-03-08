@@ -8,7 +8,7 @@ authors = [{name = "Krystian Krakowski", email = "kkrakowski22@gmail.com"}]
 dependencies = []
 
 [tool.uv.workspace]
-members = ["python/*"]
+members = ["python/*", "mixed/*"]
 
 [dependency-groups]
 dev = [

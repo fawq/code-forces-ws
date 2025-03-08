@@ -6,6 +6,7 @@ requires-python = ">=3.10"
 members = [
     "code-forces-ws",
     "test-pkg",
+    "test-pkg-rust-python",
     "test-pkg2",
 ]
 
@@ -168,6 +169,11 @@ wheels = [
 name = "test-pkg"
 version = "0.1.0"
 source = { editable = "python/test-pkg" }
+
+[[package]]
+name = "test-pkg-rust-python"
+version = "0.1.0"
+source = { editable = "mixed/test-pkg-rust-python" }
 
 [[package]]
 name = "test-pkg2"
