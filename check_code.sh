@@ -2,6 +2,9 @@
 
 set -xe
 
+# Sync uv if any changes
+uv sync
+
 # Rebuild mixed workspaces
 find mixed/ -maxdepth 1 -mindepth 1 -type d -exec maturin develop --release --uv -m {}/Cargo.toml \;
 

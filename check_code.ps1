@@ -1,6 +1,9 @@
+# Sync uv if any changes
+uv sync
+
 # Rebuild mixed workspaces
-Get-ChildItem -Path mixed/ -Recurse -Depth 1 | Where-Object { $_.PSIsContainer } | ForEach-Object {
-    maturin develop --release --uv -m $_.FullName/Cargo.toml
+Get-ChildItem -Path mixed/ -Recurse -Depth 0 | Where-Object { $_.PSIsContainer } | ForEach-Object { 
+    maturin develop --release --uv -m mixed/$_/Cargo.toml 
 }
 
 # Check all rust code (also mixed workspaces)
