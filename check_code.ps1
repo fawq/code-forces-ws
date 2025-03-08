@@ -7,9 +7,9 @@ Get-ChildItem -Path mixed/ -Recurse -Depth 0 | Where-Object { $_.PSIsContainer }
 }
 
 # Check all rust code (also mixed workspaces)
-cargo --config rust_win_config.toml check
-cargo --config rust_win_config.toml fmt
-cargo --config rust_win_config.toml test
+cargo --config win_config/rust_config.toml check
+cargo --config win_config/rust_config.toml fmt
+cargo --config win_config/rust_config.toml test
 
 # Check python code (also mixed workspaces)
 uv run mypy .
