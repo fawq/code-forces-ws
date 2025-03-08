@@ -7,7 +7,7 @@ fn hello_from_bin() -> String {
 
 #[pyfunction]
 fn get_fine_number() -> u32 {
-    55
+    56
 }
 
 /// A Python module implemented in Rust. The name of this function must match
@@ -27,6 +27,6 @@ mod tests {
     #[test]
     fn test_assert() {
         let result = get_fine_number() + 2;
-        assert_eq!(result, 57);
+        assert_eq!(result, 58);
     }
 }
