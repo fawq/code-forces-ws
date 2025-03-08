@@ -14,7 +14,7 @@ Create `pyproject.toml` file:
 
 ```toml
 [project]
-name = <name>
+name = "Add name of main directory"
 version = "0.1.0"
 description = "Python code"
 readme = "README.md"
@@ -87,7 +87,7 @@ cargo run --bin <name>
 
 ## Check code
 
-> [!WARNING]  
+> [!IMPORTANT]  
 > You need to manually develop release for maturin project. More info at [notes](#update-mixed-workspace)
 
 ```bash
@@ -110,7 +110,7 @@ cargo test --bin <name>
 
 ## Mixed (Rust libray + Python package)
 
-> [!WARNING]  
+> [!IMPORTANT]  
 > You need to manually develop release for maturin project. More info at [notes](#update-mixed-workspace)
 
 ```bash
@@ -118,7 +118,7 @@ uv run pytest mixed/<name>
 cargo test
 ```
 
-> [!INFO]
+> [!NOTE]
 > You cannot test rust libraries directly. You can only test whole project.
 
 ## Notes
