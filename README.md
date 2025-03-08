@@ -87,9 +87,6 @@ cargo run --bin <name>
 
 ## Check code
 
-> [!IMPORTANT]  
-> You need to manually develop release for maturin project. More info at [notes](#update-mixed-workspace)
-
 ```bash
 ./check_code.sh
 ```
@@ -128,5 +125,5 @@ cargo test
 To get newest python version of maturin/pyo3 project you need to run:
 
 ```bash
-maturin develop --release --uv mixed/<name>/Cargo.toml
+maturin develop --release --uv -m mixed/<name>/Cargo.toml
 ```
