@@ -81,6 +81,9 @@ uv run --package <name> <name>
 
 ### Rust bin
 
+> [!IMPORTANT]  
+> You need to add `--config win_config/rust_config.toml` in powershell to get python environment.
+
 ```bash
 cargo run --bin <name>
 ```
@@ -99,7 +102,7 @@ cargo run --bin <name>
 uv run pytest python/<name>
 ```
 
-### Rust tests (not working for libraries)
+### Rust tests
 
 ```bash
 cargo test --bin <name>
