@@ -12,6 +12,7 @@ find mixed/ -maxdepth 1 -mindepth 1 -type d -exec maturin develop --release --uv
 cargo check
 cargo fmt
 cargo test
+cargo clippy
 
 # Check python code (also mixed workspaces)
 uv run mypy .
