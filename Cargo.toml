@@ -8,4 +8,4 @@ edition = "2021"
 description = "Rust code"
 authors = ["Krystian Krakowski <kkrakowski22@gmail.com>"]
 readme = "README.md"
-rust-version = "1.75"
+rust-version = "1.78"
